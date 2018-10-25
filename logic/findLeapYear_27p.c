@@ -19,14 +19,12 @@ void printArray(){
 		}
 		displayCenteredTextLine(0,"%d page / 8", page);
 		displayTextLine(i % 14 + 1, "%d", leapYear[i]);
-		writeDebugStreamLine("%d" , i);
 		sleep(500);
 	}
 }
 
 task main()
 {
-	clearDebugStream();
 	int year = 1909;
 	int count = 0;
 	while(count <100){
